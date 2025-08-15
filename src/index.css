@@ -1,1 +1,72 @@
 @import "tailwindcss";
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-background: hsl(var(--background));
+  --color-footer: hsl(var(--footer));
+  --color-foreground: hsl(var(--foreground));
+  --color-graytext: hsl(var(--graytext));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-shadow-tone: hsl(var(--shadow-tone));
+}
+
+@layer base {
+  :root {
+    --background: 65 8% 88%;
+    --footer: 65 8% 83%;
+    --foreground: 222 47% 11%;
+    --graytext: 213 0% 18%;
+
+    --primary: 360 57% 45%;
+    --primary-foreground: 212 10% 3%;
+
+    --shadow-tone: 360 0% 18%;
+  }
+
+  * {
+    @apply m-0 p-0;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@utility shadow {
+  filter: drop-shadow(0 0 9px var(--color-shadow-tone));
+}
+
+@utility t1 {
+  @apply font-bold text-base sm:text-lg md:text-xl lg:text-2xl;
+}
+
+@utility t2 {
+  @apply font-light text-sm sm:text-base md:text-lg lg:text-xl;
+}
+
+@utility t3 {
+  @apply font-light text-xs sm:text-sm md:text-sm lg:text-base;
+}
+
+@utility t4 {
+  @apply font-extralight text-xs sm:text-xs md:text-xs lg:text-sm;
+}
+
+@utility t-ico1 {
+  @apply text-2xl sm:text-3xl md:text-3xl lg:text-4xl;
+}
+
+@utility t-ico2 {
+  @apply text-xl sm:text-2xl md:text-2xl lg:text-3xl;
+}
+
+@utility t-ico3 {
+  @apply text-lg sm:text-xl md:text-xl lg:text-2xl;
+}
