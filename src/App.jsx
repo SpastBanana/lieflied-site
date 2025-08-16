@@ -1,9 +1,11 @@
-import { HomeNav } from "./components/HomeNav";
+import { Head } from "./components/home/Head";
+import { Nav } from "./components/home/Nav";
 
 function App() {
   return (
     <>
-      <HomeNav />
+      <Nav />
+      <Head />
     </>
   );
 }
