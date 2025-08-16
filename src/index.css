@@ -9,9 +9,12 @@
 
   --color-primary-light: hsl(var(--primary-light));
   --color-primary-dark: hsl(var(--primary-dark));
+  --color-primary-text: hsl(var(--primary-text));
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-primary-foreground-inverted: hsl(var(--primary-foreground-inverted));
   --color-shadow-tone: hsl(var(--shadow-tone));
+
+  --color-gold: hsl(var(--gold));
 }
 
 @layer base {
@@ -23,8 +26,11 @@
 
     --primary-light: 134 53% 77%;
     --primary-dark: 133 36% 42%;
+    --primary-text: 134 53% 65%;
     --primary-foreground: 212 10% 3%;
     --primary-foreground-inverted: 212 10% 80%;
+
+    --gold: 46 86% 48%;
 
     --shadow-tone: 360 0% 18%;
   }
@@ -43,12 +49,24 @@
   }
 }
 
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 5px rgba(230, 230, 230, 0.2);
+}
+
+@utility innershade {
+  box-shadow: inset 0 0 8px 4px #000000;
+}
+
 @utility shadow {
   filter: drop-shadow(0 0 9px var(--color-shadow-tone));
 }
 
 @utility t1 {
   @apply font-bold text-base sm:text-lg md:text-xl lg:text-2xl;
+}
+@utility h1 {
+  @apply font-bold text-base sm:text-2xl md:text-3xl lg:text-4xl;
 }
 
 @utility t2 {
