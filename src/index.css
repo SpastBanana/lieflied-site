@@ -82,7 +82,7 @@
 }
 
 @utility t-ico1 {
-  @apply text-2xl sm:text-3xl md:text-3xl lg:text-4xl;
+  @apply text-3xl sm:text-4xl md:text-4xl lg:text-5xl;
 }
 
 @utility t-ico2 {
