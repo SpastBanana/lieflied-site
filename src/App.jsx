@@ -1,3 +1,4 @@
+import { Footer } from "./components/home/footer";
 import { Head } from "./components/home/Head";
 import { Info } from "./components/home/Info";
 import { Nav } from "./components/home/Nav";
@@ -10,6 +11,7 @@ function App() {
       <Head />
       <Info />
       <Order />
+      <Footer />
     </>
   );
 }
