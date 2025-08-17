@@ -13,7 +13,7 @@ export const Head = () => {
         <img
           src="/img/site/Logo.jpeg"
           alt="Logo"
-          className="w-90 rounded-lg shadow"
+          className="w-90 rounded-lg shadow-lg"
         />
         <h2 className="h1 text-gold tracking-wider text-glow border-">
           Kaartverkoop!
