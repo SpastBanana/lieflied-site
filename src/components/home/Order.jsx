@@ -2,7 +2,6 @@ import { useState } from "react";
 
 export const Order = () => {
   const [tickets, setTickets] = useState("1");
-  console.log(tickets);
 
   return (
     <div
