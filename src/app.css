@@ -27,7 +27,7 @@
     --graytext: 213 0% 18%;
 
     --primary-light: 134 53% 77%;
-    --primary-dark: 133 36% 42%;
+    --primary-dark: 121 27% 56%;
     --primary-text: 134 53% 65%;
     --primary-foreground: 212 10% 3%;
     --primary-foreground-inverted: 212 10% 80%;
@@ -51,11 +51,25 @@
     @apply bg-background text-foreground transition-colors duration-300;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+
+  input {
+    outline: none;
+  }
 }
 
 @utility text-glow {
   @apply relative;
-  text-shadow: 0 0 2px var(--color-gold);
+  text-shadow: 0 0 3px var(--color-gold);
+}
+
+@utility input-wrapper {
+  @apply relative before:absolute w-2/3;
+  @apply border-3 border-solid border-primary-dark rounded-lg;
+  @apply before:top-[-14px] before:left-3 before:bg-white before:pl-2 before:pr-2 before:text-primary-dark;
+}
+
+@utility input-field {
+  @apply w-full h-11 p-2;
 }
 
 @utility innershade {

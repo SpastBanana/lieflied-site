@@ -8,7 +8,7 @@ export const Nav = () => {
         <a href="#kaarten">Kaarten kopen</a>
       </div>
       <div className="mr-9 t-ico3 text-white">
-        <a href="/login">
+        <a href="https://ticketmaster.huizedevries.nl" target="_blank">
           <BiUser />
         </a>
       </div>
