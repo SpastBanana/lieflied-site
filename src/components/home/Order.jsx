@@ -14,7 +14,7 @@ export const Order = () => {
           <img
             src="/img/site/Ticket.png"
             alt="Ticket Icon"
-            className="w-full absolute z-10"
+            className="w-full absolute z-10 rotate-8"
           />
           <p className="absolute w-full h-30 flex items-center justify-center z-20 t2 font-semibold italic">
             {`€${(parseInt(tickets) * 12.5).toFixed(2).replace(".", ",")}`}

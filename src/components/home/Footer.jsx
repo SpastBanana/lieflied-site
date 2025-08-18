@@ -2,7 +2,7 @@ export const Footer = () => {
   return (
     <div className="h-33 flex items-center justify-center flex-col">
       <p className="t4 mt-3">Deze site wordt mogelijk gemaakt door</p>
-      <a href="https://rhythmstudios.nl">
+      <a href="https://rhythmstudios.nl" target="_blank">
         <img
           src="/img/site/srs.png"
           alt="Logo Sebastiaan's Rhythm Studios"
