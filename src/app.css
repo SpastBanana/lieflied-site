@@ -118,3 +118,15 @@
 @utility t-ico3 {
   @apply text-lg sm:text-xl md:text-xl lg:text-2xl;
 }
+
+/* ADMIN PAGE */
+@utility nav-item {
+  @apply flex items-center justify-end gap-2 text-gray-900 h-12 p-4 w-full hover:bg-primary-dark;
+  @apply cursor-pointer;
+}
+@utility nav-item-t {
+  @apply flex items-center justify-center t2;
+}
+@utility nav-item-i {
+  @apply flex items-center justify-center t-ico3;
+}
