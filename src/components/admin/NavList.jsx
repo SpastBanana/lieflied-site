@@ -1,8 +1,6 @@
-import { BiSolidDashboard, BiSolidLogOut } from "react-icons/bi";
-import { BsBack, BsCash, BsGear, BsTicket } from "react-icons/bs";
 import {
   FaCashRegister,
-  FaComputer,
+  FaEnvelope,
   FaGear,
   FaLaptop,
   FaRightFromBracket,
@@ -19,16 +17,16 @@ export const NavList = () => {
       />
       <div className="w-full flex items-end justify-center flex-col">
         <a className="nav-item">
-          <p className="nav-item-t">Dashboard</p>
-          <BiSolidDashboard className="nav-item-i" />
-        </a>
-        <a className="nav-item">
           <p className="nav-item-t">Kaarten</p>
           <FaTicket className="nav-item-i" />
         </a>
         <a className="nav-item">
           <p className="nav-item-t">Kassa</p>
           <FaCashRegister className="nav-item-i" />
+        </a>
+        <a className="nav-item">
+          <p className="nav-item-t">Email</p>
+          <FaEnvelope className="nav-item-i" />
         </a>
         <a className="nav-item">
           <p className="nav-item-t">Instellingen</p>
