@@ -13,9 +13,9 @@ export const Head = () => {
         <img
           src="/img/site/Logo.jpeg"
           alt="Logo"
-          className="w-90 rounded-lg shadow-lg"
+          className="md:w-90 w-60 rounded-lg shadow-lg"
         />
-        <h2 className="h1 text-gold tracking-wider text-glow border-">
+        <h2 className="text-gold tracking-wider text-glow text-3xl font-semibold">
           Kaartverkoop!
         </h2>
       </div>

@@ -8,7 +8,7 @@ export const Order = () => {
       id="kaarten"
       className="min-h-[calc(100vh-132px)] w-screen bg-primary-light flex items-center justify-around"
     >
-      <div className="bg-white shadow-sm w-2/7 h-[65vh] rounded-3xl rounded-tr-none flex items-center justify-evenly flex-col">
+      <div className="bg-white shadow-sm md:w-2/7 w-4/5 h-[65vh] rounded-3xl rounded-tr-none flex items-center justify-evenly flex-col">
         <div className="w-52 h-30 relative">
           <img
             src="/img/site/Ticket.png"
