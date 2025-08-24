@@ -104,6 +104,9 @@
 @utility t2 {
   @apply font-light text-sm sm:text-base md:text-lg lg:text-xl;
 }
+@utility h2 {
+  @apply font-bold text-base sm:text-2xl md:text-3xl lg:text-3xl;
+}
 
 @utility t3 {
   @apply font-light text-xs sm:text-sm md:text-sm lg:text-base;
@@ -127,7 +130,7 @@
 
 /* ADMIN PAGE */
 @utility nav-item {
-  @apply flex items-center justify-end gap-2 text-gray-900 h-12 p-4 w-full hover:bg-primary-dark;
+  @apply flex items-center justify-end gap-2 text-gray-900 h-12 p-4 w-full hover:bg-primary-dark transition-all;
   @apply cursor-pointer;
 }
 @utility nav-item-t {

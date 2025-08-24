@@ -7,7 +7,14 @@ import {
   FaTicket,
 } from "react-icons/fa6";
 
-export const NavList = () => {
+export const NavList = ({ setTickets, setCheckout, setEmail, setSettings }) => {
+  function menuClear() {
+    setTickets(false);
+    setCheckout(false);
+    setEmail(false);
+    setSettings(false);
+  }
+
   return (
     <div className="w-60 h-screen flex items-center justify-between flex-col bg-primary-light pt-10 pb-10">
       <img
@@ -16,19 +23,43 @@ export const NavList = () => {
         className="w-3/4 rounded-lg"
       />
       <div className="w-full flex items-end justify-center flex-col">
-        <a className="nav-item">
+        <a
+          className="nav-item"
+          onClick={() => {
+            menuClear();
+            setTickets(true);
+          }}
+        >
           <p className="nav-item-t">Kaarten</p>
           <FaTicket className="nav-item-i" />
         </a>
-        <a className="nav-item">
+        <a
+          className="nav-item"
+          onClick={() => {
+            menuClear();
+            setCheckout(true);
+          }}
+        >
           <p className="nav-item-t">Kassa</p>
           <FaCashRegister className="nav-item-i" />
         </a>
-        <a className="nav-item">
+        <a
+          className="nav-item"
+          onClick={() => {
+            menuClear();
+            setEmail(true);
+          }}
+        >
           <p className="nav-item-t">Email</p>
           <FaEnvelope className="nav-item-i" />
         </a>
-        <a className="nav-item">
+        <a
+          className="nav-item"
+          onClick={() => {
+            menuClear();
+            setSettings(true);
+          }}
+        >
           <p className="nav-item-t">Instellingen</p>
           <FaGear className="nav-item-i" />
         </a>
